@@ -1,0 +1,98 @@
+.culture-item {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+  }
+  
+  .culture-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .culture-image-container {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .culture-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .culture-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .culture-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: white;
+  }
+  
+  .culture-button.minus {
+    color: #ff6b6b;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .culture-button.download {
+    color: #4CAF50;
+    padding: 5px;
+  }
+  
+  .culture-count {
+    margin: 0 10px;
+    font-weight: 500;
+  }
+  
+  .culture-info {
+    padding: 16px;
+  }
+  
+  .culture-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #333;
+  }
+  
+  .culture-rating {
+    margin-bottom: 8px;
+    color: #ddd;
+  }
+  
+  .star.filled {
+    color: #ff9a3c;
+  }
+  
+  .culture-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  .culture-besoin_eau {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6bc4ff;
+    margin: 8px 0 0 0;
+  }

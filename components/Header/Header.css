@@ -1,0 +1,176 @@
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles pour le carrousel d'images */
+  .image-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+  }
+  
+  /* Overlay pour améliorer la lisibilité du texte */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+  
+  /* Styles pour le contenu */
+  .header-content {
+    text-align: left;
+    color: white;
+    max-width: 50%;
+    padding: 3rem;
+    z-index: 1;
+  }
+  
+  .header-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+  }
+  
+  .header-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+  
+  .view-menu-btn {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .view-menu-btn:hover {
+    background-color: #f8f8f8;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Indicateurs de navigation */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .indicator.active {
+    background-color: white;
+    transform: scale(1.2);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .header-content {
+      max-width: 60%;
+    }
+    
+    .header-content h1 {
+      font-size: 2.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      height: 400px;
+    }
+    
+    .header-content {
+      max-width: 70%;
+      padding: 2rem;
+    }
+    
+    .header-content h1 {
+      font-size: 2.2rem;
+    }
+    
+    .header-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header-container {
+      padding: 1rem;
+    }
+    
+    .header {
+      height: 350px;
+      border-radius: 12px;
+    }
+    
+    .header-content {
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+    
+    .header-content h1 {
+      font-size: 1.8rem;
+    }
+    
+    .carousel-indicators {
+      bottom: 15px;
+      right: 15px;
+    }
+  }
